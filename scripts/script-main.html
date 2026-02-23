@@ -26,6 +26,17 @@
 <div class="container">
 
     <div class="card">
+        <h3>🔄 Changelog</h3>
+        <p><strong>v1.0</strong></p>
+        <ul>
+            <li>Reestruturação completa da engine</li>
+            <li>Sistema de registro de instâncias otimizado</li>
+            <li>Padronização de teclas globais</li>
+            <li>Modularização dos comandos auxiliares</li>
+        </ul>
+    </div>
+
+    <div class="card">
         <h2>🧠 Script Main</h2>
         <p><strong>Versão:</strong> v1.0</p>
         <p><strong>Tipo:</strong> Base obrigatória para todos os scripts</p>
@@ -35,23 +46,90 @@
     </div>
 
     <div class="card">
-        <h3>📜 Sobre o Script</h3>
+        <h3>📜 Sobre a Engine</h3>
         <p>
-            O Script Main é a base estrutural utilizada por todos os scripts desenvolvidos neste projeto.
-            Ele é responsável por padronizar inicialização, controle de execução,
-            segurança e organização do loop principal.
+            O Script Main é a engine central responsável por gerenciar múltiplas instâncias,
+            controle de grupos, definição de líderes, atalhos globais e estrutura de execução contínua.
+        </p>
+        <p>
+            Ele permanece em loop constante e fornece a base necessária para que
+            módulos adicionais executem ações como multi-click, formação de grupo,
+            seguimento de líder e outras automações estratégicas.
         </p>
     </div>
 
     <div class="card">
-        <h3>⚙ Funções Principais</h3>
+        <h3>🚀 Fluxo de Inicialização</h3>
+        <p>
+            Ao iniciar, a engine solicita um código:
+        </p>
         <ul>
-            <li>Inicialização padrão do ambiente</li>
-            <li>Controle de loop principal</li>
-            <li>Verificação de status do personagem</li>
-            <li>Estrutura modular para outros scripts</li>
-            <li>Base para otimizações futuras</li>
+            <li><strong>1</strong> – Define teclas globais e registra as janelas ativas</li>
+            <li><strong>0</strong> – Retorna ao loop principal após pausa</li>
         </ul>
+        <p>
+            Esse sistema garante padronização sempre que o ambiente é reiniciado.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🪟 Gerenciamento de Instâncias</h3>
+        <p>
+            A engine identifica automaticamente todas as janelas abertas
+            com o nome configurado e registra suas identificações internas
+            em um arquivo local.
+        </p>
+        <p>
+            Cada instância é armazenada em ordem sequencial,
+            permitindo definir hierarquia apenas pela ordem de abertura.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>👑 Sistema de Liderança</h3>
+        <p>
+            Os líderes são definidos automaticamente com base na ordem
+            das instâncias registradas.
+        </p>
+        <p>
+            Basta organizar a abertura das janelas antes da inicialização
+            para redefinir a hierarquia de forma simples e eficiente.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🧩 Módulos Integrados</h3>
+        <p>
+            A engine inicializa módulos auxiliares responsáveis por
+            funções específicas como ações simultâneas, formação de grupo,
+            seguimento e comandos auxiliares.
+        </p>
+        <p>
+            Todos os módulos dependem da estrutura inicial fornecida
+            pelo Script Main.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>⚙ Estrutura da Engine</h3>
+        <ul>
+            <li>Definição de quantidade de contas</li>
+            <li>Configuração de líderes de grupo</li>
+            <li>Controle de múltiplos grupos simultâneos</li>
+            <li>Gerenciamento de handles das janelas abertas</li>
+            <li>Definição de teclas de atalho globais</li>
+            <li>Loop principal contínuo</li>
+            <li>Base para módulos adicionais</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🧩 Arquitetura Modular</h3>
+        <p>
+            Scripts adicionais não executam diretamente sem a Engine.
+            Eles utilizam a estrutura já inicializada pelo Script Main,
+            garantindo padronização, segurança e escalabilidade.
+        </p>
     </div>
 
     <div class="card">
