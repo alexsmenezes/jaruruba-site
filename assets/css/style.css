@@ -1,91 +1,62 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo */
 body {
-    background-color: #0f0f0f;
-    color: #f1f1f1;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f1117;
+    color: #e4e6eb;
 }
 
-/* Header */
 header {
-    background: #141414;
-    padding: 25px;
+    background: #141824;
+    padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #1f2533;
 }
 
-header h1 {
-    color: #00ff99;
-    font-size: 28px;
+h1 {
+    margin: 0;
+    color: #00ffae;
+    letter-spacing: 2px;
 }
 
-/* Navegação */
-nav {
-    background: #1c1c1c;
-    padding: 12px;
-    text-align: center;
-    border-bottom: 1px solid #222;
-}
-
-nav a {
-    color: #00ff99;
+a {
+    color: #00ffae;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #ffffff;
+a:hover {
+    color: #00ffaa;
+    text-shadow: 0 0 5px #00ffae;
 }
 
-/* Conteúdo */
 .container {
-    padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
+    padding: 40px 20px;
 }
 
-/* Botões */
-.button {
-    display: inline-block;
-    padding: 14px 28px;
-    margin-top: 20px;
-    background-color: #00ff99;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
+.card {
+    background: #141824;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #1f2533;
+    margin-bottom: 20px;
     transition: 0.3s;
 }
 
-.button:hover {
-    background-color: #00cc77;
+.card:hover {
+    border-color: #00ffae;
+    box-shadow: 0 0 10px rgba(0,255,174,0.2);
 }
 
-/* Footer */
-footer {
-    background: #141414;
-    padding: 25px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 60px;
-    border-top: 1px solid #222;
+button {
+    background: #00ffae;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-footer a {
-    color: #00ff99;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    color: #ffffff;
+button:hover {
+    background: #00ffaa;
 }
