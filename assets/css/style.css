@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #141414;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+header h1 {
+    color: #00ff99;
+    font-size: 28px;
+}
+
+/* Navegação */
+nav {
+    background: #1c1c1c;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+nav a {
+    color: #00ff99;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Conteúdo */
+.container {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    margin-top: 20px;
+    background-color: #00ff99;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #00cc77;
+}
+
+/* Footer */
+footer {
+    background: #141414;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px;
+    border-top: 1px solid #222;
+}
+
+footer a {
+    color: #00ff99;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
