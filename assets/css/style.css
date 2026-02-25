@@ -174,3 +174,21 @@ footer {
     font-weight: bold;
     border-radius: 5px;
 }
+
+.btn {
+    display:inline-block;
+    text-decoration:none;
+    background: linear-gradient(90deg, #00ffae, #00c896);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0b0d14;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffae;
+}

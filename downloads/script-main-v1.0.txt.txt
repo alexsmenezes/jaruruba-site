@@ -1,0 +1,102 @@
+:start
+if $startzero < 0
+    set linedelay 0
+    set $start1 prompt (Digite o valor necessário:\n1- Define as Teclas\n0- Inicia o Script)
+    set $startzero 1
+    set $start 1
+    goto main
+end_if
+:main
+if $start1 = 1
+    //--Cria um arquivo chamado "logs" para identificar as janelas
+        set %handle findwindow ("NOME DA JANELA DO JOGO")
+        save_array %handle "..\uopilot\logs.txt"
+    //--
+    set $clickStart F10         //(1) --click simultaneo
+        start_script 1 wait
+    set $clickStart2 F11        //(2) --duplo click individual
+        start_script 2 wait
+    set $ptStart ScrollLock     //(3) --formar pt
+        start_script 3 wait
+    set $segStart Insert        //(4) --seguir
+        start_script 4 wait
+    set $auxStart Home          //(5) --atq auxiliar
+        start_script 5 wait
+    set $imgStart PageUp        //(6) --procurar npc
+        start_script 6 wait
+    set $questStart PageDown    //(7) --spacebar pular quest
+        start_script 7 wait
+    set $antibugStart End       //(8) --click com 1.5s de intervalo
+        start_script 8 wait
+    set $meridStart Pause       //(9) --meridiano
+        start_script 9 wait
+    stop_script
+end_if
+goto sets
+
+:sets
+    set $start 0
+    set $clickStart F10         //(1) --click simultaneo
+    set $clickStart2 F11        //(2) --duplo click individual
+    set $ptStart ScrollLock     //(3) --formar pt
+    set $segStart Insert        //(4) --seguir
+    set $auxStart Home          //(5) --atq auxiliar
+    set $imgStart PageUp        //(6) --procurar npc
+    set $questStart PageDown    //(7) --spacebar pular quest
+    set $antibugStart End       //(8) --antibug do click
+    set $meridStart Pause       //(9) meridiano
+goto class
+
+//----------Variáveis----------//
+:class
+    //--Usa o arquivo criado para reconhecer as janelas
+        load_array %arr "..\uopilot\logs.txt"
+    //--
+//--Conta 1--//
+set $char1     %arr [1 1]
+//--Conta 2--//
+set $char2     %arr [2 1]
+//--Conta 3--//
+set $char3     %arr [3 1]
+//--Conta 4--//
+set $char4     %arr [4 1]
+//--Conta 5--//
+set $char5     %arr [5 1]
+//--Conta 6--//
+set $char6     %arr [6 1]
+//--Conta 7--//
+set $char7     %arr [7 1]
+//--Conta 8--//
+set $char8     %arr [8 1]
+//--Conta 9--//
+set $char9     %arr [9 1]
+//--Conta 10--//
+set $char10    %arr [10 1]
+//--Conta 11--//
+set $char11    %arr [11 1]
+//--Conta 12--//
+set $char12    %arr [12 1]
+//--Conta 13--//
+set $char13    %arr [13 1]
+//--Conta 14--//
+set $char14    %arr [14 1]
+//--Conta 15--//
+set $char15    %arr [15 1]
+//--Conta 16--//
+set $char16    %arr [16 1]
+//--Conta 17--//
+set $char17    %arr [17 1]
+//--Conta 18--//
+set $char18    %arr [18 1]
+//--Conta 19--//
+set $char19    %arr [19 1]
+//--Conta 20--//
+set $char20    %arr [20 1]
+//--Lider--//
+set $lider  $char1
+set $lider2 $char2
+set $lider3 $char3
+
+:loop
+
+goto loop

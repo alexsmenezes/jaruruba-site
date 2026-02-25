@@ -12,7 +12,7 @@
         <div class="logo-symbol">JT</div>
         <div>
             <h1>JARURUBA TOOLS</h1>
-            <div class="subtitle">PW Scripts • UoPilot • Automação Estratégica</div>
+            <div class="subtitle">Engine Modular de Automação para Jogos de PC</div>
         </div>
     </div>
 </header>
@@ -29,41 +29,6 @@
 </nav>
 
 <div class="container">
-
-    <div class="card">
-        <h3>🔄 Changelog</h3>
-        <p><strong>v1.0</strong></p>
-        <ul>
-            <li>Reestruturação completa da engine</li>
-            <li>Sistema de registro de instâncias otimizado</li>
-            <li>Padronização de teclas globais</li>
-            <li>Modularização dos comandos auxiliares</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>🎮 Compatibilidade</h3>
-        <p>
-            Testado em diversos servidores privados baseados na estrutura clássica de Perfect World.
-        </p>
-        <p>
-            Caso o ambiente apresente diferenças específicas, ajustes personalizados podem ser realizados para adaptação.
-        </p>
-        <p style="font-size:12px; color:#6b7280;">
-            Projeto independente, sem vínculo com administradores ou desenvolvedores dos servidores mencionados.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>🔧 Ajustes Personalizados</h3>
-        <p>
-            Diferenças entre servidores privados podem impactar pequenas funcionalidades.
-        </p>
-        <p>
-            Caso necessário, análises técnicas podem ser realizadas para adaptar a engine
-            ao ambiente específico.
-        </p>
-    </div>
 
     <div class="card">
         <h2>🧠 Script Main</h2>
@@ -85,6 +50,19 @@
             módulos adicionais executem ações como multi-click, formação de grupo,
             seguimento de líder e outras automações estratégicas.
         </p>
+    </div>
+
+    <div class="card">
+        <h3>⚙ Componentes da Engine</h3>
+        <ul>
+            <li>Definição de quantidade de contas</li>
+            <li>Configuração de líderes de grupo</li>
+            <li>Controle de múltiplos grupos simultâneos</li>
+            <li>Gerenciamento de handles das janelas abertas</li>
+            <li>Definição de teclas de atalho globais</li>
+            <li>Loop principal contínuo</li>
+            <li>Base para módulos adicionais</li>
+        </ul>
     </div>
 
     <div class="card">
@@ -127,6 +105,15 @@
     </div>
 
     <div class="card">
+        <h3>🧩 Arquitetura Modular</h3>
+        <p>
+            Scripts adicionais não executam diretamente sem a Engine.
+            Eles utilizam a estrutura já inicializada pelo Script Main,
+            garantindo padronização, segurança e escalabilidade.
+        </p>
+    </div>
+
+        <div class="card">
         <h3>🧩 Módulos Integrados</h3>
         <p>
             A engine inicializa módulos auxiliares responsáveis por
@@ -140,25 +127,43 @@
     </div>
 
     <div class="card">
-        <h3>⚙ Estrutura da Engine</h3>
+        <h3>🎮 Compatibilidade</h3>
+        <p>
+            Testado nos seguintes servidores de Perfect World (PW):
+        </p>
         <ul>
-            <li>Definição de quantidade de contas</li>
-            <li>Configuração de líderes de grupo</li>
-            <li>Controle de múltiplos grupos simultâneos</li>
-            <li>Gerenciamento de handles das janelas abertas</li>
-            <li>Definição de teclas de atalho globais</li>
-            <li>Loop principal contínuo</li>
-            <li>Base para módulos adicionais</li>
+            <li>Perfect World New History</li>
+            <li>Perfect World Level Up</li>
+            <li>The Classic Perfect World</li>
         </ul>
+        <p>
+            A estrutura da engine é adaptável para outros jogos de PC que utilizem múltiplas instâncias.
+        </p>
+        <p style="font-size:12px; color:#6b7280;">
+            Projeto independente, sem vínculo com administradores ou desenvolvedores dos servidores mencionados.
+        </p>
     </div>
 
     <div class="card">
-        <h3>🧩 Arquitetura Modular</h3>
+        <h3>🔧 Ajustes Personalizados</h3>
         <p>
-            Scripts adicionais não executam diretamente sem a Engine.
-            Eles utilizam a estrutura já inicializada pelo Script Main,
-            garantindo padronização, segurança e escalabilidade.
+            Diferenças entre servidores privados podem impactar pequenas funcionalidades.
         </p>
+        <p>
+            Caso necessário, análises técnicas podem ser realizadas para adaptar a engine
+            ao ambiente específico.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🔄 Changelog</h3>
+        <p><strong>v1.0</strong></p>
+        <ul>
+            <li>Reestruturação completa da engine</li>
+            <li>Sistema de registro de instâncias otimizado</li>
+            <li>Padronização de teclas globais</li>
+            <li>Modularização dos comandos auxiliares</li>
+        </ul>
     </div>
 
     <div class="card">
@@ -180,7 +185,9 @@
 
     <div class="card">
         <h3>📥 Download</h3>
-        <button>Baixar Script Main v1.0</button>
+        <a href="../../downloads/script-main-v1.0.txt" class="btn">
+            Baixar Script Main v1.0
+        </a>
     </div>
 
     <div class="card">
