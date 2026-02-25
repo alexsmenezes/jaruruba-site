@@ -31,13 +31,31 @@
 <div class="container">
 
     <div class="card">
-        <h2>🧠 Script Main</h2>
+        <span style="
+            display:inline-block;
+            padding:6px 12px;
+            background:#111827;
+            color:#22c55e;
+            border-radius:20px;
+            font-size:12px;
+            margin-bottom:10px;">
+            BASE OBRIGATÓRIA
+        </span>
+        <h2>🧠 Script Main — Engine Base v1.0</h2>
         <p><strong>Versão:</strong> v1.0</p>
         <p><strong>Tipo:</strong> Base obrigatória para todos os scripts</p>
+        <div class="card" style="background:#0f172a; border:2px solid #22c55e;">
+            <h3>🚨 Importante</h3>
+            <p>
+                Todos os módulos adicionais dependem da inicialização correta do Script Main.
+                Execute sempre esta engine antes de qualquer outro script.
+            </p>
+        </div>
         <p style="font-size:12px; color:#6b7280;">
-            Última atualização: 23/02/2026
+            Última atualização: 25/02/2026
         </p>
     </div>
+
 
     <div class="card">
         <h3>📜 Sobre a Engine</h3>
@@ -133,7 +151,7 @@
         </p>
         <ul>
             <li>Perfect World New History</li>
-            <li>Perfect World Level Up</li>
+            <li>Perfect World Nirvana</li>
             <li>The Classic Perfect World</li>
         </ul>
         <p>
@@ -171,7 +189,7 @@
         <p>Explicação do funcionamento do Script Main:</p>
 
         <iframe width="100%" height="400"
-            src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
+            src="https://www.youtube.com/embed/1S6me5hzDS4"
             frameborder="0"
             allowfullscreen>
         </iframe>
@@ -180,7 +198,11 @@
     <div class="card">
         <h3>🖼 Prints</h3>
         <p>Exemplos da estrutura em funcionamento:</p>
-        <img src="../../assets/img/main-print1.png" style="width:100%; border-radius:8px;">
+        <div class="print-container">
+            <img src="../../assets/img/upilot-img-representativa.png" 
+                class="print-img"
+                onclick="openModal(this)">
+        </div>
     </div>
 
     <div class="card">
@@ -192,10 +214,9 @@
 
     <div class="card">
         <h3>🌐 Comunidade</h3>
-        <p>Acompanhe atualizações e suporte:</p>
-        <button>YouTube</button>
-        <button>TikTok</button>
-        <button>Discord (Em Breve)</button>
+        <a href="https://youtube.com/SEUCANAL" target="_blank" class="btn">YouTube</a>
+        <a href="https://tiktok.com/@SEUPERFIL" target="_blank" class="btn">TikTok</a>
+        <a href="#" class="btn">Discord (Em Breve)</a>
     </div>
 
 </div>
@@ -203,6 +224,28 @@
 <footer>
     Projeto independente mantido por Jaruruba • 2026
 </footer>
+
+<!-- MODAL ZOOM -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<script>
+function openModal(img) {
+    document.getElementById("imgModal").style.display = "flex";
+    document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+}
+
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+        closeModal();
+    }
+});
+</script>
 
 </body>
 </html>
